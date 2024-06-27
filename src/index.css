@@ -21,7 +21,7 @@ body {
 }
 
 .resetAll {
-  /* margin: 10px; */
+  margin: 10px;
   padding: 10px 45px;
   border-radius: 25px;
   background-color: gray;
