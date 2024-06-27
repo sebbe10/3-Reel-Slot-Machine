@@ -20,6 +20,15 @@ body {
   font-weight: 800;
 }
 
+.resetAll {
+  margin: 10px;
+  padding: 10px 45px;
+  border-radius: 25px;
+  background-color: gray;
+  color: white;
+  border: none;
+}
+
 .theResultAndWon {
   display: flex;
   flex-direction: column;
