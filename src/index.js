@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
         count++;
         if (count >= spins) {
           clearInterval(interval);
-          checkResult();
         }
       }, delay);
     }
@@ -49,9 +48,22 @@ document.addEventListener("DOMContentLoaded", () => {
           reel1.textContent === reel2.textContent &&
           reel1.textContent === reel3.textContent
         ) {
+          let savedMoney = JSON.parse(localStorage.getItem("savemoney")) || 0;
+
+          let addMoney = Math.floor(Math.random() * 10000);
+          savedMoney += addMoney;
+
+          document.getElementById("youWon").innerHTML = `${addMoney} kr`;
+
+          localStorage.setItem("savemoney", JSON.stringify(savedMoney));
+
+          document.getElementById(
+            "money"
+          ).textContent = `Total summa: ${savedMoney} kr`;
           result.textContent = "Congratulations! You won!";
         } else {
           result.textContent = "Try again!";
+          document.getElementById("youWon").innerHTML = "";
         }
       }, 500);
     }, 1500);
@@ -61,4 +73,10 @@ document.addEventListener("DOMContentLoaded", () => {
   document
     .getElementById("spinButton")
     .addEventListener("click", spinSlotMachine);
+
+  // Load and display the saved money on page load
+  let savedMoney = JSON.parse(localStorage.getItem("savemoney")) || 0;
+  document.getElementById(
+    "money"
+  ).textContent = `Total summa: ${savedMoney} kr`;
 });

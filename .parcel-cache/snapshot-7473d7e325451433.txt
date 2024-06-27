@@ -1,0 +1,9 @@
+8
+53C:\Webbutveckling 12\3-Reel-Slot-Machine\package.json133638154662967315 0
+58C:\Webbutveckling 12\3-Reel-Slot-Machine\package-lock.json133639715341791997 0
+51C:\Webbutveckling 12\3-Reel-Slot-Machine\.gitignore133638154930554532 0
+50C:\Webbutveckling 12\3-Reel-Slot-Machine\README.md133638155966379037 0
+44C:\Webbutveckling 12\3-Reel-Slot-Machine\src133638154197364674 1
+53C:\Webbutveckling 12\3-Reel-Slot-Machine\src\index.js133639713671088136 0
+54C:\Webbutveckling 12\3-Reel-Slot-Machine\src\index.css133638136043808726 0
+55C:\Webbutveckling 12\3-Reel-Slot-Machine\src\index.html133639712790069153 0

@@ -3,9 +3,42 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
   background-color: #f0f0f0;
   font-family: Arial, sans-serif;
+}
+
+.header {
+  width: 100%;
+  background-color: whitesmoke;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+.h1 {
+  font-size: 30px;
+  font-family: Arial;
+  font-weight: 800;
+}
+
+.theResultAndWon {
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  text-align: center;
+}
+
+.slotgame {
+  display: flex;
+  background-color: #f5f5f5;
+  border: 1px solid #000;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px #000;
+  width: 50%;
+  height: 250px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
 }
 
 .slot-machine {
@@ -26,9 +59,21 @@ body {
 }
 
 #spinButton {
-  padding: 10px 20px;
-  font-size: 1rem;
+  padding: 10px 45px;
+  border-radius: 25px;
+  background-color: gray;
+  color: white;
+  border: none;
+}
+
+#spinButton:hover {
   cursor: pointer;
+  background-color: rgb(161, 160, 160);
+}
+
+#spinButton:active {
+  background-color: darkgrey;
+  color: black;
 }
 
 #result {
